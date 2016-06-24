@@ -1,13 +1,9 @@
 <?php 
 // Información de conexión a la base 
-$host = “br-cdbr-azure-south-b.cloudapp.net”; 
-$user = “b68002cf79a115”; 
-$pwd = “a1c5ccdf”; 
-$db = “itclibreria;
+include("datos/conex.php");
+
 
 try{ 
-    $conn = new PDO( “mysql:host=$host;dbname=$db”, $user, $pwd); 
-    $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION ); 
     $sql = “-- phpMyAdmin SQL Dump
 -- version 4.5.1
 -- http://www.phpmyadmin.net
@@ -405,7 +401,7 @@ ALTER TABLE `prestamo`
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 ”; 
-    $conn->query($sql); 
+    mysqli_query($db,$sql);
     echo “<h3>Table creada!</h3>”; 
 } 
 catch(Exception $e){ 
