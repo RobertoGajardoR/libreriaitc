@@ -1,9 +1,9 @@
 <?php 
 // Información de conexión a la base 
-$host = “us-cdbr-azure-west-c.cloudapp.net”; 
-$user = “bb8344e2463c9c”; 
-$pwd = “ef5f797d”; 
-$db = “acsm_81c36e5f6e6d2e6”;
+$host = “br-cdbr-azure-south-b.cloudapp.net”; 
+$user = “b68002cf79a115”; 
+$pwd = “a1c5ccdf”; 
+$db = “itclibreria;
 
 try{ 
     $conn = new PDO( “mysql:host=$host;dbname=$db”, $user, $pwd); 
