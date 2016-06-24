@@ -406,9 +406,11 @@ ALTER TABLE `prestamo`
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 ”; 
     $conn->query($sql); 
+    echo “<h3>Table creada!</h3>”; 
 } 
 catch(Exception $e){ 
     die(print_r($e)); 
+    echo “<h3>error alguna wea!</h3>”; 
 } 
 echo “<h3>Table creada!</h3>”; 
 ?>
