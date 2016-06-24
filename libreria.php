@@ -153,7 +153,7 @@ if (@!$_SESSION['user']) {
       <div class="footer-left">
 
         <p class="footer-links">
-          <a href="index.php">inicio</a>
+          <a href="libreria.php">inicio</a>
           ·
           <a href="#">Soporte</a>
           ·
