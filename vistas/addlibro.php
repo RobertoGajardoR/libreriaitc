@@ -19,6 +19,7 @@ if (@!$_SESSION['user']) {
   <link rel="shortcut icon" type="image/png" href="../favicon.png" />
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/css.css">
+  <link rel="stylesheet" href="../css/jquery.dataTables.css">
   <script src="https://use.fontawesome.com/05e3561c64.js"></script>
   <script src="../js/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
